@@ -1,0 +1,295 @@
+*{
+  padding: 0;  
+  margin: 0;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #e9dfdf;
+  
+}
+
+.container-central{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+
+}
+
+header{
+  background-image: url(../photo/bg3.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  color: white;
+  padding: 20px;
+  width: 80%;
+  border-radius: 30px;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0 20px;
+}
+.logo{
+  font-size: 36px;
+  font-weight: bold;
+}
+.nav-links{
+  display: flex;
+  list-style: none;
+}
+.nav-links li{
+  margin: 0 15px;
+}
+.nav-links a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.nav-links a:hover{
+  color: #ff6347;
+}
+
+.hero{
+  text-align: left;
+  margin-top: 100px;
+}
+
+.hero h1{
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.hero p{
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.button{
+  width: 100px;
+  padding: 10px 20px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: #ac214f;
+}
+
+.button a{
+  color: white;
+  text-decoration: none;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+
+}
+.produits{
+  width: 80%;
+  
+}
+
+.product-grid{
+  display: flex;
+ flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card{
+  width: 20%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-card img{
+width: 100%;
+}
+
+.btn-voir-plus{
+  display: none;
+}
+
+footer{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+}
+
+.container-footer{
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.footer-content{
+  width: 20%;;
+}
+.footer-section p{
+  margin: 10px 0 10px 0;
+  font-size: 16px;
+  color: #ccc;
+}
+
+
+
+
+
+.footer-links ul{
+  list-style: none;
+  padding: 0;
+}
+.footer-links ul li{
+  margin: 10px 0;
+}
+.footer-links ul li a{
+  color: #ccc;
+  text-decoration: none;
+  font-size: 16px;
+}
+.footer-links ul li a:hover{
+  color: #ff6347;
+}
+
+.social-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  padding: 0;
+  width: 35%;
+}
+
+.social-links ul{
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+.social-links a{
+  margin: 0 10px;
+  color: #ccc;
+  font-size: 24px;
+  text-decoration: none;
+}
+.social-links a:hover{
+  color: #ff6347;
+}
+
+@media (max-width: 700px){
+  .logo{
+    font-size: 15px;
+  }
+
+  .nav-links{
+    display: none;
+  }
+
+  .hero h1{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .button{
+    width: 80px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .product-card{
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .none{
+    display: none;
+  }
+
+  .btn-voir-plus{
+    display: block;
+    width: 60%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ff6347;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .container-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .btn-voir-plus:hover{
+    background-color: #ac214f;
+  }
+  .btn-voir-plus a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .container-footer{
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .social-links{
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .footer-section h2{
+    text-align: center;
+  }
+
+  .social-links ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .social-links a{
+    font-size: 20px;
+  }
+
+  .footer-content{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-links{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer-links ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  
+  
+  .footer-section p{
+    font-size: 14px;
+  }
+}
